@@ -410,12 +410,12 @@ const Services = () => {
                         key={idx}
                         className="p-6 border-border hover:shadow-md transition-shadow"
                       >
-                        <div className="flex justify-between items-start mb-3">
-                          <h3 className="font-medium text-lg pr-4">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-1">
+                          <h3 className="font-medium text-lg">
                             {service.name}
                           </h3>
                           {(service.priceText || service.price) && (
-                            <span className="font-serif text-xl whitespace-nowrap">
+                            <span className="font-serif text-xl text-primary">
                               {service.priceText || `$${service.price}`}
                             </span>
                           )}
